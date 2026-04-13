@@ -24,3 +24,7 @@ I somehow get this and somehow do not, grand scheme of things. It is executed in
 
 ### xfs_file-open:
 The file-system specific open callback, and the callback used in this case study.
+
+The main ideas from this is during this process, the model takes a simplified path through path resolution, acquisition of dentries and inodes, access checks and confirmations, and initialisation of the file structure. 
+
+(upload model Linux open path)
