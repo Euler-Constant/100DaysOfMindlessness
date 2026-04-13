@@ -1,8 +1,8 @@
 # Day Three: The File-open path, and implementation goals
 
-Paper: (Papers in repo)
-Date: 2026-04-13
-Status: Confuzzled (Paper/documentation read)
+- Paper: (Papers in repo)
+- Date: 2026-04-13
+- Status: Confuzzled (Paper/documentation read)
 
 ## Core Breakdown:
 (-What other file-open paths could there be to exploit?)
