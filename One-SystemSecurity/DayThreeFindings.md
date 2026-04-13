@@ -1,8 +1,8 @@
-# Day Three: 
+# Day Three: The File-open path, and implementation goals
 
-Paper: Same as Day
+Paper: (Papers in repo)
 Date: 2026-04-13
-Status: Confuzzled
+Status: Confuzzled (Paper/documentation read)
 
 ## Core Breakdown:
 (-What other file-open paths could there be to exploit?)
@@ -13,7 +13,7 @@ This is considered a "decision function", and for all intents and purposes, it's
 
 ### inode_permission: 
 This performs permission checks, and I was correct with my initial analysis that it indeed is in sync with LSM hook initialisation. It's invoked from *may_open*, but it is not specific to open operations. 
-(- Implementation issues: invocations caused specifically by the open path
+- Implementation issues: invocations caused specifically by the open path
 - Because this function primarily handles an inode and an access mask, and does not provide path-based or file-based context, the information provided at this point is limited.)
 
 ### do_dentry_open: 
@@ -27,4 +27,5 @@ The file-system specific open callback, and the callback used in this case study
 
 The main ideas from this is during this process, the model takes a simplified path through path resolution, acquisition of dentries and inodes, access checks and confirmations, and initialisation of the file structure. 
 
-(upload model Linux open path)
+![Screenshot_2026-04-13_21-52-39](https://github.com/user-attachments/assets/8b62809b-3ad6-4cf6-92a3-42c18e815975)
+
