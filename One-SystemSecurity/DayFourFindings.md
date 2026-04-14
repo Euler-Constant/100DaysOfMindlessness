@@ -5,12 +5,15 @@
 - Status: It's working out (???) (Paper/article reads)
 
 ## Core Breakdown (more like a log than a breakdown):
-1. T1486: Data Encrypted for Impact
+1. T1486: Data Encrypted for Impact:
+
+"Ransomware threat actors use this technique to encrypt their victims' data via cryptographic encryption algorithms. When implemented correctly, these algorithms are practically unbreakable. For improved performance, ransomware attacks use symmetric and asymmetric encryption algorithms in combination. This method is called the "hybrid encryption approach" and allows attackers to encrypt their victim's data quickly without compromising the security of their operation."
+
 2. T1490: Inhibit System Recovery
-3. T1027: Obfuscated Files or Information
-4. T1047: Windows Management Instrumentation
+3. T1027: Obfuscated Files or Information:
+4. T1047: Windows Management Instrumentation: (Need to look into this properly)
 5. T1036: Masquerading
-6. T1059: Command and Scripting Interpreter
+6. T1059: Command and Scripting Interpreter: Shellcode?
 7. T1562: Impair Defenses
 8. T1112: Modify Registry
 9. T1204: User Execution
