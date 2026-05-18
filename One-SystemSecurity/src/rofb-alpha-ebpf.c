@@ -35,9 +35,6 @@ int BPF_KPROBE(security_file_open, struct file *file)
     filename = (char *)bpf_get_current_comm();  // fallback
     bpf_probe_read_kernel_str(e->filename, sizeof(e->filename), path->dentry->d_name.name);
 
-    // === BACKUP LOGIC (the ROFBSα core) ===
-    // In real version you'd call a helper to copy the file to .tmp
-    // For now we just mark success so you can measure ratio
     e->success = 1;   // TODO: replace with actual copy_to_tmp()
 
     bpf_ringbuf_submit(e, 0);
